@@ -34,7 +34,7 @@ int findPages(vector<int> &arr, int n, int m)
         return *max_element(arr.begin(), arr.end());
     int start = *min_element(arr.begin(), arr.end());
     int end = accumulate(arr.begin(), arr.end(), 0);
-    int ans = end;
+    int ans = -1;
 
     while (start <= end)
     {
